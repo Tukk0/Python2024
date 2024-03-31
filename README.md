@@ -14,3 +14,4 @@
 # Архитектура
 [Диаграмма вариантов использования](https://github.com/Tukk0/Python2024/blob/documentation/docs/Use-case%20diagram.png).
 Список предполагаемых возможных команд и описание их функционала приведены в виде [таблицы](https://github.com/Tukk0/Python2024/blob/documentation/docs/Commands_table.png).
+[Диаграмма классов](https://github.com/Tukk0/Python2024/blob/documentation/docs/Classes%20diagram.png).
