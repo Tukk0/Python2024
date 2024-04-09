@@ -11,12 +11,11 @@ Greeting = Greeting()
 Time = Time()
 Date = Date()
 Farewell = Phrase(pv.Farewell, keywords.Farewell)
-Weather = Phrase(pv.Weather, keywords.Weather)
 Google = Phrase(pv.Google, keywords.Google, is_a_link=True, link=links.google_link)
 Youtube = Phrase(pv.Youtube, keywords.Youtube, is_a_link=True, link=links.youtube_link)
 Mipt = Phrase(pv.Mipt, keywords.Mipt, is_a_link=True, link=links.mipt_link)
 Github = Phrase(pv.Github, keywords.Github, is_a_link=True, link=links.github_link)
-phrases = [Greeting, Farewell, Time, Date, Weather, Google, Youtube, Mipt, Github]
+phrases = [Greeting, Farewell, Time, Date, Google, Youtube, Mipt, Github]
 
 
 def checkall(text):

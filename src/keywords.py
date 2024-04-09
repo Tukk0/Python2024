@@ -2,7 +2,6 @@ Greeting = ["hello", "hi", "hey", "howdy", "morning", "afternoon", "evening", "n
 Farewell = ["goodbye", "bye", "later", "got to go", "see you", "farewell"]
 Time = ["time"]
 Date = ["date", "day of the week"]
-Weather = ["weather"]
 Google = ["google", "search", "internet"]
 Youtube = ["youtube"]
 Mipt = ["mipt", "university"]

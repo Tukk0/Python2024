@@ -4,7 +4,7 @@ import phrase_class as pc
 import phrase_variants as pv
 import keywords
 
-date = datetime.datetime.now().strftime("%d %B, %Y")
+date = datetime.datetime.now().strftime("%A, %d %B, %Y")
 time = datetime.datetime.now().strftime("%H:%M %p")
 
 
