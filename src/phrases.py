@@ -25,5 +25,5 @@ def checkall(text):
             playsound.playsound(sound)
             break
     else:
-        pass
+        print("Sorry, I don't understand you")
 

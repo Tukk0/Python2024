@@ -1,11 +1,11 @@
-import keywords
+import end_session as es
 import phrases
 import speech_processing as sp
 
 while True:
-    text = sp.get_message()
+    text = " " + sp.get_message() + " "
     phrases.checkall(text)
-    for keyword in keywords.Farewell:
-        if keyword in text:
-            break
+    if es.end_session(text):
+        break
+    text = "0"
 

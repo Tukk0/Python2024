@@ -1,7 +1,6 @@
 import random
-from time import sleep
 
-import links_processing as lp
+import links as lp
 
 
 class Phrase:
@@ -14,10 +13,6 @@ class Phrase:
     def say(self):
         return random.choice(self.variants)
 
-    def say_with_pause(self, pause):
-        sleep(pause)
-        return self.say()
-
     def act(self):
         if self.is_a_link:
             lp.open_link(self.link)
@@ -28,4 +23,3 @@ class Phrase:
             if keyword in text:
                 return True
         return False
-
