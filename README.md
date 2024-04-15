@@ -19,11 +19,10 @@ __От прочего функционала было решено отказа�
 
 Инструкция по установке и запуску:
 ```
-pip install PyAudio
-pip install SpeechRecogntion
-pip install playsound==1.2.2
+pip install -r requirements.txt
 git clone git@github.com:Tukk0/Python2024.git VoiceAssistant
 cd VoiceAssistant
 cd src
 python3 main.py
 ```
+Примечание: требуется версия Python 3.10
