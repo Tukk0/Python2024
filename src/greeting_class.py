@@ -4,11 +4,9 @@ import random
 import keywords
 import phrase_class as pc
 import phrase_variants as pv
-
+import time_aliases as ta
 
 # phrase variants: "hello", "welcome back", "good night", "good morning", "good afternoon", "good evening"
-
-time = int(datetime.datetime.now().strftime("%H"))
 
 
 class Greeting(pc.Phrase):
@@ -17,17 +15,17 @@ class Greeting(pc.Phrase):
 
     def act(self):
         picker = random.randint(1, 3)
-        if picker == 1:
+        if picker == ta.hello_variant:
             return self.variants[0]
-        if picker == 2:
+        if picker == ta.welcome_back_variant:
             return self.variants[1]
-        if picker == 3:
-            if time < 6:
+        if picker == ta.time_of_day_variant:
+            time = int(datetime.datetime.now().strftime("%H"))
+            if time < ta.morning_hours:
                 return self.variants[2]
-            elif time < 12:
+            elif time < ta.afternoon_hours:
                 return self.variants[3]
-            elif time < 18:
+            elif time < ta.evening_hours:
                 return self.variants[4]
             else:
                 return self.variants[5]
-
