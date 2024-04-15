@@ -19,9 +19,9 @@ __От прочего функционала было решено отказа�
 
 Инструкция по установке и запуску:
 ```
-pip install -r requirements.txt
 git clone git@github.com:Tukk0/Python2024.git VoiceAssistant
 cd VoiceAssistant
+pip install -r requirements.txt
 cd src
 python3 main.py
 ```
